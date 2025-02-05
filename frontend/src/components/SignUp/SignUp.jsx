@@ -34,7 +34,7 @@ const SignUp = () => {
         withCredentials: true,
       };
       const data = await axios.post(
-        `http://localhost:8000/user/register`,
+        `https://expense-tracker-1-zioz.onrender.com/user/register`,
         userData,
         {
           withCredentials: true,

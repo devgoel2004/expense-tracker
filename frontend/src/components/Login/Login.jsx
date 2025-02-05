@@ -31,7 +31,7 @@ const Login = () => {
         password,
       };
       const data = await axios.post(
-        `http://localhost:8000/user/login`,
+        `https://expense-tracker-1-zioz.onrender.com/user/login`,
         userData
         // config
       );

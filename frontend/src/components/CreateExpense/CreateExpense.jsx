@@ -27,7 +27,7 @@ const CreateExpense = () => {
         date,
         category,
       };
-      const data = await axios.post(`http://localhost:8000/expense`, userData, {
+      const data = await axios.post(`https://expense-tracker-1-zioz.onrender.com/expense`, userData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -25,7 +25,7 @@ const ExpenseDetails = () => {
     };
     try {
       const data = await axios.get(
-        `http://localhost:8000/expense/${id}`,
+        `https://expense-tracker-1-zioz.onrender.com/expense/${id}`,
         config
       );
       setAmount(data.data.expense.amount);
@@ -45,7 +45,7 @@ const ExpenseDetails = () => {
         },
       };
       const data = await axios.put(
-        `http://localhost:8000/expense/${id}`,
+        `https://expense-tracker-1-zioz.onrender.com/expense/${id}`,
         {
           amount,
           description,
@@ -78,7 +78,7 @@ const ExpenseDetails = () => {
       };
       console.log(token);
       const data = await axios.delete(
-        `http://localhost:8000/expense/${id}`,
+        `https://expense-tracker-1-zioz.onrender.com/expense/${id}`,
         config
       );
       alert.success(data.data.message);

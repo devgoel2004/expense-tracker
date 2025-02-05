@@ -46,7 +46,7 @@ const Users = () => {
         },
       };
       const data = await axios.get(
-        `http://localhost:8000/user/getAllUsers`,
+        `https://expense-tracker-1-zioz.onrender.com/user/getAllUsers`,
         config
       );
       setUsers(data.data.users);

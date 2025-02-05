@@ -20,7 +20,7 @@ const Profile = () => {
   };
   const getUserDetails = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:8000/user/profile`, {
+      const { data } = await axios.get(`https://expense-tracker-1-zioz.onrender.com/user/profile`, {
         headers: {
           Authorization: `Bearer ${x}`,
         },
@@ -45,7 +45,7 @@ const Profile = () => {
         userId,
       };
       const data = await axios.put(
-        `http://localhost:8000/user/profile`,
+        `https://expense-tracker-1-zioz.onrender.com/user/profile`,
         userData,
         {
           headers: {

@@ -24,7 +24,7 @@ const Dashboard = () => {
   const getAllExpenses = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8000/expense/get/all/expense`,
+        `https://expense-tracker-1-zioz.onrender.com/expense/get/all/expense`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ const Dashboard = () => {
   const getExpenses = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8000/expense?page=${currentPage}&category=${category}`,
+        `https://expense-tracker-1-zioz.onrender.com/expense?page=${currentPage}&category=${category}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
