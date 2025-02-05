@@ -1,0 +1,61 @@
+.button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+.pageItemActive {
+  background-color: tomato;
+}
+.pageLinkActive {
+  color: #ffffff;
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vmax;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+}

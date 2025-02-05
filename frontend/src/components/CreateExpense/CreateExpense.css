@@ -1,0 +1,16 @@
+.create-expense {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 50vw;
+  padding: 8px 10px;
+  margin: 4px 8px;
+}
